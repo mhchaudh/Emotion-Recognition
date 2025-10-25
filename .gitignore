@@ -1,5 +1,19 @@
+# Virtual env and cache
 venv/
 __pycache__/
 *.pyc
+
+# Large data and model files
+fer2013*
+*.h5
+*.pkl
+*.pt
+*.dylib
+*.zip
+*.tar
+*.tar.gz
+*.csv
+
+# System files
 .DS_Store
 .env
