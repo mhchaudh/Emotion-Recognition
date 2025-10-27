@@ -37,6 +37,7 @@ The **Emotion Recognition System** is a computer vision project that detects hum
 Download the **FER2013 dataset** from [Kaggle](https://www.kaggle.com/datasets/msambare/fer2013) or another source.  
 Organize it as follows:
 
+```
 Emotion rec/
 ├── fer2013/
 │ ├── train/
@@ -49,7 +50,7 @@ Emotion rec/
 │ ├── sad/
 │ ├── angry/
 │ └── ...
-
+```
 
 > ⚠️ Note: The FER2013 dataset is **not included in this repository** due to size limits.  
 
@@ -66,9 +67,13 @@ venv\Scripts\activate             # Windows
 # Install dependencies
 pip install -r requirements.txt
 
-### 3️⃣ Train the Model
+```
 
+### 3️⃣ Train the Model
+```bash
 python train_model.py
+
+```
 
 This will generate two files in your project directory:
 
@@ -82,7 +87,11 @@ You can tweak training settings such as batch size and epochs in train_model.py.
 
 ### 4️⃣ Run Real-Time Detection
 
+```bash
+
 python detect_emotion.py
+
+```
 
 
 A webcam window will open showing live detections.
